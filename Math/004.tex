@@ -1,9 +1,14 @@
+\begin{quote}
+無名, 天地之始; 有名, 萬物之母. 常無, 欲以觀其妙; 常有, 欲以觀其徼. -
+苏辙 『老子解』
+\end{quote}
+
 \hypertarget{ux5355ux5c04-ux6ee1ux5c04-ux53ccux5c04-injection-surjection-bijection}{%
 \subsubsection{单射, 满射, 双射 (injection, surjection,
 bijection)}\label{ux5355ux5c04-ux6ee1ux5c04-ux53ccux5c04-injection-surjection-bijection}}
 
-一个函数 \(f:X\rightarrow Y\) 若满足, 如果 \(f(a)\neq f(b)\) 则
-\(a\neq b\) 对于任何属于 \(X\) 的 \(a\) 和 \(b\),
+一个函数 \(f:X\rightarrow Y\) 若满足, 如果 \(a\neq b\) 则
+\(f(a)\neq f(b)\) 对于任何属于 \(X\) 的 \(a\) 和 \(b\),
 那么它便是\textbf{单射}的 (injection, one-to-one)\footnote{One-to-one
   是更''纯正''英语的说法, 比较通俗, injection 是来自法语的舶来词,
   更具高级感; 后面的 onto 和 surjection 同.}.
@@ -81,9 +86,9 @@ function)}\label{ux53cdux51fdux6570-inverse-function}}
 因为这样便不符合函数定义了, 一个输入值不可以有多个输出值,
 或则说一个自变量不能对应多个因变量
 (但是多个因变量对应一个自变量是允许的, 可以参考满射但不单射的图例).
-这里反函数取正或负取决于原函数的定义域, 若\(y=f(x)=x^2, x\ge 0\),
-则\(x=f^{-1}(y)=\sqrt{y}\); 若 \(y=f(x)=x^2, x\le 0\),
-则\(x=f^{-1}(y)=-\sqrt{y}\).
+这里反函数取正或负取决于原函数的定义域, 若 \(y=f(x)=x^2, x\ge 0\), 则
+\(x=f^{-1}(y)=\sqrt{y}\); 若 \(y=f(x)=x^2, x\le 0\), 则
+\(x=f^{-1}(y)=-\sqrt{y}\).
 
 \hypertarget{ux9690ux51fdux6570-implicit-function}{%
 \subsubsection{隐函数 (implicit
@@ -101,3 +106,11 @@ function)}\label{ux9690ux51fdux6570-implicit-function}}
 关于 \(x\) 的函数】的表达式, 我们称之为\textbf{隐函数} (implicit
 function); 为表区分, 前面介绍的类似 \(y=f(x)\) 的函数,
 称为\textbf{显函数} (explicit function).
+
+\hypertarget{ux7ebfux6027-linearity}{%
+\subsubsection{线性 (linearity)}\label{ux7ebfux6027-linearity}}
+
+这是一个很好的特性, 并不局限于函数, 仅对于函数来说的话,
+若一个函数是线性的, 便有
+
+\(f(a+b)=f(a)+f(b),\ f(ax)=af(x).\)

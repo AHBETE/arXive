@@ -1,0 +1,158 @@
+\documentclass[openany]{book}
+\usepackage[UTF8]{ctex}
+\title{从零开始的数学}
+\newcommand{\booksubtitle}{从零开始系列}
+\newcommand{\booklicense}{Creative Commons}
+
+\author{Zibo (AHBETE) Wang}
+% Author subtitle could be a university or a geographical location, for example
+\newcommand{\authorsubtitle}{}
+
+% Create convenient commands \booktitle and \bookauthor
+\makeatletter
+\newcommand{\booktitle}{\@title}
+\newcommand{\bookauthor}{\@author}
+\makeatother
+
+% This utf8 declaration is not needed for versions of latex > 2018 but may
+% be helpful for older software. Eventually it may not be worth keeping.
+\usepackage[utf8]{inputenc}  
+\usepackage{fix-cm}  % this package allows large \fontsize
+\usepackage{tikz}    % this is for graphics. e.g. rectangle on title page
+\usepackage{amsmath,amssymb} % Used by equations
+\usepackage{physics,bookmark,tcolorbox}
+\tcbuselibrary{breakable}
+\setlength\parindent{0pt}
+
+% The following dimensions specify 4.75" X 7.5" content on 6 3/8" by 9 1/4"
+% paper. The paper width and height can be tweaked as required and the content
+% should size to fit within the margins accordingly.
+%
+% The (inside) bindingoffset should be larger for books with more pages. Some
+% standard recommended sizes are .375in minimum up to 1in for 600+ page books.
+% Sizes .75in and .875in are also recommended roughly at 150 and 400 pages.
+\usepackage[bindingoffset=0.625in,
+            left=.5in, right=.5in,
+            top=.8125in, bottom=.9375in,
+            paperwidth=6.375in, paperheight=9.25in]{geometry}
+% Here is an alternative geometry for reading on letter size paper:
+% \usepackage[margin=.75in, paperwidth=8.5in, paperheight=11in]{geometry}
+
+\renewcommand{\contentsname}{Table of Contents} % default is {Contents}
+\usepackage{makeidx}
+\makeindex % Initialize an index so we can add entries with \index
+
+% Content Starts Here
+\begin{document}
+\frontmatter
+
+% ---- Title Page ----
+% current geometry will be restored after title page
+\newgeometry{top=1.75in,bottom=.5in}
+\begin{titlepage}
+\begin{flushleft}
+
+% Title
+\begin{center}
+\textbf{\fontfamily{qcs}{\fontsize{42}{42}\selectfont  \}从零开始\{}\\{\LARGE\selectfont  的数学}}
+\end{center}
+
+% Draw a line 4pt high
+\par\noindent\rule{\textwidth}{4pt}\\
+
+% Shaded box from left to right with Subtitle
+% The text node is midway (centered).
+\begin{tikzpicture}
+\shade[bottom color=lightgray,top color=white]
+    (0,0) rectangle (\textwidth, 1.5)
+    node[midway] {\textbf{\large {\booksubtitle}}};
+\end{tikzpicture}
+
+% Edition Number
+\begin{flushright}
+\large Zeroth Edition
+\end{flushright}
+
+\vspace{\fill}
+
+% Author and Location
+\textbf{\large Author: }\textbf{\large \bookauthor}\\[3.5pt]
+\textbf{\large \textit{\authorsubtitle}}\\
+% \textbf{\large Editor: Jiyuan (Maki) Lu}\\
+% \textbf{\large }
+
+\vspace{\fill}
+
+\end{flushleft}
+\end{titlepage}
+\restoregeometry
+% ---- End of Title Page ----
+
+% Do not show page numbers on colophon page
+\thispagestyle{empty}
+
+\begin{flushleft}
+\vspace*{\fill}
+% AHBETE's physics notes series\\
+% A member of Maki's Lab (https://www.maki-math.com)\\
+% Contact info: wangz57@rpi.edu\\
+\vspace{\fill}
+Copyright \textcopyright{} \the\year{}  \bookauthor\\
+License: \booklicense
+\end{flushleft}
+
+% A title page resets the page # to 1, but the second title page
+% was actually page 3. So add two to page counter.
+\addtocounter{page}{2}
+
+% The asterisk excludes chapter from the table of contents.
+\chapter*{Preface}
+
+
+% Three-level Table of Contents
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\mainmatter
+
+\part{}
+
+\chapter{预备微积分 (precalculus)}
+\input{001}
+\input{002}
+\input{003}
+\input{004}
+\input{005}
+\input{006}
+\input{007}
+\input{008}
+\backmatter
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+\end{document}
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8, indentfirst}
+\usepackage{graphicx} % Required for inserting images
+
+\title{0}
+\author{Zibo Wang}
+\date{April 2023}
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+\maketitle
+
+\section{Introduction}
+\input{001}
+\input{002}
+\input{003}
+\input{004}
+\input{005}
+\input{006}
+\input{007}
+\input{008}
+
+\end{CJK*}
+\end{document}
