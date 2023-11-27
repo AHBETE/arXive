@@ -1,0 +1,136 @@
+\section{幂运算和对数}\label{002}
+
+\begin{flushright}{\kaishu 轻清者上浮而为天\ 重浊者下凝而为地}\end{flushright}
+
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={幂运算
+(exponentiation)}]
+
+幂运算可以视作重复的乘法, 即
+$a^n=\underbrace{a\times ...\times a}_{n}$, 这里 $a$ 称为底数 (base)
+, $n$ 称为指数 (exponent)\footnote{从这一篇开始,
+  文章的叙述讲逐渐从``具体→抽象''过渡到``抽象→具体'',
+  即由之前先给一个具体数字运算的例子推广到用字母表示的通常情况,
+  变为反过来的顺序; 阅读过程中如果觉得不适应, 抽象的点读不懂时,
+  可以先接着往下看, 若之后有一个具体的例子, 可能对理解会有帮助.},
+$a^n$ 读作 $a$ 的 $n$ 次幂，或 $a$ 的 $n$ 次方.
+
+先考虑正整数次幂, 一些运算规律:
+
+\begin{itemize}
+
+{\item
+$\boxed{a^m\times a^n=a^{n+m}}$\\
+因为 $\underbrace{a\times ...\times a}_{m}\times\underbrace{a\times ...\times a}_{n}=\underbrace{a\times ...\times a}_{n+m}$}.
+{\item
+$\boxed{a^m\div a^n=a^{m-n}}$\\
+因为 $\underbrace{a\times ...\times a}_{m}\div\underbrace{(a\times ...\times a)}_{n}=\underbrace{a\times ...\times a}_{m-n}$}.
+\end{itemize}
+
+再来考虑 $0$ 次幂, 因为上述运算规律 $a^n\times a^0=a^{n+0}=a^n$,
+因此应该有 $a^0=1$ ; 要注意, 当底数为 $0$ 时, $0^0$
+是不被定义的\footnote{一说理由和 $0$ 不能作为除数类似;
+  另一说要从函数的角度出发, 这里稍稍剧透, 即,
+  构建不同的函数极限试图求这个``值''会有不同的结果,
+  所以这个``值''没有一个很好的公认的定义.}.
+
+\begin{itemize}
+
+{\item
+  $\boxed{a^0=1}$对于非零的 $a$.}
+\end{itemize}
+
+现在来看负整数为指数的幂, 参考第二条规律, 不难看出 $a^{-n}$
+可以理解为除掉了 $n$ 个 $a$, 因此有
+
+\begin{itemize}
+
+{\item
+  $\boxed{a^{-n}=\frac{1}{a^n}}$.}
+\end{itemize}
+
+因为在前面一节我们已经把我们研究的范围扩充到了所有有理数,
+所以不妨来看看分数作为指数的情况. 考虑 $a^{\frac{1}{2}}$, 这里 $a$
+是有理数, 令 $b:=a^{\frac{1}{2}}$, 平方可得
+$b^2=a^{\frac{1}{2}}\times a^{\frac{1}{2}}=a^{\frac{1}{2}+\frac{1}{2}}=a$;
+事实上我们知道, 要求 $b$ 的话, 只需进行``开方''这个操作, 记作
+$b=\sqrt{a}$, 因此有 $a^{\frac{1}{2}}=b=\sqrt{a}$; 然而,
+这个操作其实是有一点``小问题''的.
+
+\begin{newquote}
+这个``小问题''便是, 目前为止, 我们讨论的范围还限于有理数,
+然而上述操作得到的 $\sqrt{a}$ 并不一定是有理数;
+这个问题在历史上也困扰了人们很久.
+
+起初人们认为数轴上所有的数都应该可以用整数之比 (也就是有理数) 来表示,
+但有人发现, 例如边长为1的正方形, 其对角线的平方利用\textbf{勾股定律}
+(Pythagorean theorem - 毕达哥拉斯定律) 应该是 $2$,
+找不出一个有理数使得其平方正好为 $2$.
+
+然后为了解决问题, 提出问题的人就被解决掉了, 悲伤的故事.
+
+现在, 平方正好为 $2$ 的数字被记作了 $\sqrt{2}$,
+它不是有理数的证明可以留作练习, 一点提示就是可以利用反证法,
+首先假设它是一个有理数, 并可以表示为例如 $\frac{p}{q}$, 且 $p$ 和
+$q$ 都是正整数, 然后证明这样的 $\frac{p}{q}$ 不可能存在.
+\end{newquote}
+
+解决这个``小问题''的方法, 是要再次扩展我们研究的范围; 这次我们将有理数,
+即整数和分数, 以及数轴上``剩余''的那些不能表示成分数形式的无理数,
+统称为\textbf{实数} (real number), 记作 $\mathbb{R}$.
+这样一来我们便不必担忧开方的结果``掉到''范围外了, 上面的结论也不难推广为
+
+\begin{itemize}
+
+{\item
+  $\boxed{a^{\frac{n}{m}}=\sqrt[m]{a^n}=(\sqrt[m]{b})^n}$.}
+\end{itemize}
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={对数 (logarithm)}]
+
+对数是幂运算的逆运算. 若 $y=a^x$, 定义对数运算为 $x=\log_a(y)$,
+$a$ 叫做底数 (base) , $y$ 叫做真数.
+
+对数有以下运算规律:
+
+\begin{itemize}
+
+{\item
+  $\boxed{\log_a(XY)= \log_a(X)+ \log_a(Y)}$.\\{\kaishu 证明}: 令
+  $x=\log_a(X)$, $y=\log_a(Y)$, 根据对数定义则有 $a^x=X$,
+  $a^y=Y$;
+  $\log_a(XY)=\log_a(a^x\times a^y)=\log_a(a^{x+y})=x+y=\log_a(X)+ \log_a(Y)$.}
+{\item
+  $\boxed{\log_a\left(\frac{X}{Y}\right)= \log_a(X)- \log_a(Y)}$.\\
+  证明和上一条类似.}
+{\item
+  $\boxed{\log_a(x^n)=n\log_a(x)}$.\\由第一条规律可得
+  $\log_a(x^n)=\underbrace{\log_a(x)\times...\times\log_a(x)}_{n}=n\log_a(x)$.}
+{\item
+  $\boxed{\log_a(x)=\frac{\log_b(x)}{\log_b(a)}}$.\\令 $\log_a(x)=t$, 则有
+  $x=a^t$, 对两边同时取以 $b$ 为底数的对数,
+  $\log_b(x)=\log_b(a^t)=t\log_b(a)=\log_a(x)\log_b(a)$,
+  整理便可得上述规律.}
+\end{itemize}
+
+以上四条为最基本最常用得运算规律,
+还有一些运算规律可以从上面几条推到而来, 证明留作练习.
+
+%\begin{tcolorbox}[size=fbox, sharp corners]
+\begin{itemize}
+
+{\item
+  $\log_{a^n}x=\frac{1}{n}\log_{a}x$.}
+{\item
+  $a^{\log_a(x)}=\log_a(a^x)=x$.}
+{\item
+  $x^{\log_a(y)}=y^{\log_a(x)}$.}
+{\item
+  $\log_a(x)=\frac{1}{\log_x(a)}$.}
+{\item
+  $\log_a(b)\log_b(x)=\log_a(x)$.}
+\end{itemize}
+%\end{tcolorbox}
+
+\end{tcolorbox}

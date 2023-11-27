@@ -1,0 +1,78 @@
+\section{三角函数的指数形式}\label{010}
+
+\begin{flushright}{\kaishu (有名、无名) 此两者同出而异名, 同谓之玄, 玄之又玄, 众妙之门.}\end{flushright}
+
+前面介绍三角函数 (\ref{005}\nameref{005}) 的时候, 跳过了一些比较重要的\textbf{恒等式}
+(identities), 比如: $\cos (a\pm b)=?$, $\sin (a\pm  b)=?$
+
+事实上这些恒等式可以从纯几何出发去推导,
+或者也可以用所谓诱导公式\footnote{有一说``诱导''是谬译, induction
+  在数学中更常译作``归纳''.} (induction formula, 即三角函数的周期性),
+再或者, 在\ref{009}\nameref{009}中我们发现三角函数和指数函数有着联系,
+我们也可以利用这层关系.
+
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={三角函数的指数形式}]
+
+先前我们有,
+
+$\mathrm{e}^{i\theta}=\cos \theta+i\sin \theta$,
+
+代入 $\theta:=-\theta\  $\footnote{这里仿照了编程里常用的记法,
+  在很多语言中程序猿可能会写 a = a + 1, 这行指令并不表示 a 等于 a + 1,
+  而表示将 a 这个变量赋值它原先的值加一, 例如若起先有 a = 1,
+  那么在执行了 a = a + 1 后, a 变为了 a = 1 + 1 = 2.}, 便有
+$\mathrm{e}^{-i\theta}=\cos (-\theta)+i\sin (-\theta)$,
+利用三角函数的周期性可得,
+
+$\mathrm{e}^{-i\theta}=\cos \theta-i\sin \theta$,
+
+将前两式相加便可消去 $\sin\theta$ 项, 相减便可消去 $\cos\theta$ 项,
+化简便可得
+
+$\boxed{\cos\theta=\frac{\mathrm{e}^{i\theta}+\mathrm{e}^{-i\theta}}{2},\ \sin\theta=\frac{\mathrm{e}^{i\theta}-\mathrm{e}^{-i\theta}}{2i}}$.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={利用三角函数的指数形式推导三角函数恒等式}]
+
+以 $\cos (a+b)$ 为例:
+
+$\begin{aligned}&\cos(a+b)\\
+=&\frac{\mathrm{e}^{i(a+b)}+\mathrm{e}^{-i(a+b)}}{2}\\
+=&\frac{2\mathrm{e}^{i(a+b)}+2\mathrm{e}^{-i(a+b)}}{4}\\
+=&\frac{\mathrm{e}^{i(a+b)}{+\mathrm{e}^{i(a-b)}+\mathrm{e}^{i(-a+b)}}+\mathrm{e}^{-i(a-b)}}{4}\\
+&+\frac{\mathrm{e}^{i(a+b)}{-\mathrm{e}^{i(a-b)}-\mathrm{e}^{i(-a+b)}}+\mathrm{e}^{-i(a-b)}}{4}\\
+=&\frac{\mathrm{e}^{ia}+\mathrm{e}^{-ia}}{2}\frac{\mathrm{e}^{ib}+\mathrm{e}^{-ib}}{2}-\frac{\mathrm{e}^{ia}-\mathrm{e}^{-ia}}{2i}\frac{\mathrm{e}^{ib}-\mathrm{e}^{-ib}}{2i}\\
+=&\cos a\cos b-\sin a\sin b.\end{aligned}$
+
+类似的, 可以得到
+
+$\boxed{\begin{aligned}
+&\cos(a\pm b)=\cos a\cos b\mp \sin a \sin b,\\
+&\sin(a\pm b)=\sin a\cos b\pm \cos a\sin b.    
+\end{aligned}}$
+
+另外还有常用的二倍角公式, 可令上式中的 $a=b$ 得到,
+
+$\boxed{\begin{aligned}
+&\sin2a=2\sin a\cos a,\\
+&\cos2a=\cos^2a-\sin^2a=2\cos^2a-1=1-2\sin^2a,    
+\end{aligned}}$
+
+第二个等式利用了 $\sin^2\theta+\cos^2\theta=1$. 再还有有时会有半角,
+可以用 $\cos$ 的二倍角公式推导, 例如, 求 $\cos$ 的半角公式可以令
+$\cos$ 的二倍角公式中的 $a:=a/2$,
+
+$\cos a=2\cos^2(a/2)-1$,
+
+整理可得
+
+$\boxed{\cos\frac{a}{2}=\pm\sqrt{\frac{1+\cos a}{2}}}.$
+
+类似的
+
+$\boxed{\sin\frac{a}{2}=\pm\sqrt{\frac{1-\cos a}{2}}}.$
+
+$\tan$ 相关的公式则可以利用 $\tan=\sin/\cos$ 求得.
+
+\end{tcolorbox}

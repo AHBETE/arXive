@@ -1,0 +1,78 @@
+\section{常见函数的导数-下}\label{014}
+
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={逆函数和导数}]
+
+有的时候我们会有一个函数的反函数 (关于反函数可以参见\ref{004}\nameref{004}),
+而不是这个函数本身, 求这个函数的导数时, instead of
+先求反函数的反函数得到原函数, 我们可以利用反函数本身来求这个导数,
+\begin{align*}
+f(f^{-1}(x))=&x\\
+\text{(对两边求导)}\\
+\frac{\mathrm{d}}{\mathrm{d}x}f(f^{-1}(x))=&1\\
+\text{(利用链式法则)}\\
+f'(f^{-1}(x))\cdot\frac{\mathrm{d}}{\mathrm{d}x}f^{-1}(x)=&1\\
+\text{(rearrange)}\\
+\boxed{\frac{\mathrm{d}}{\mathrm{d}x}f^{-1}(x)=\frac{1}{f'(f^{-1}(x))}}.
+\end{align*}
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={对数函数}]
+
+这样一来, 因为我们已经知道对于指数函数有
+$\frac{\mathrm{d}}{\mathrm{d}x}\mathrm{e}^x=\mathrm{e}^x$,
+便可借助上式得到对数函数的导数了,
+\begin{align*}
+\frac{\mathrm{d}}{\mathrm{d}x}\ln(x)=&\frac{\mathrm{d}}{\mathrm{d}x}\exp^{-1}(x)\\
+&\text{(利用上式结论, 令 }f^{-1}(x):=\ln(x),\\
+&\text{ 于是 }f(x)=\exp(x), f'(x)=\exp(x)\text{ )}\\
+=&\frac{1}{\exp(\ln(x))}\\
+=&\frac{1}{x},
+\end{align*}
+因此 \begin{equation*}
+\boxed{\frac{\mathrm{d}}{\mathrm{d}x}\ln(x)=\frac{1}{x}}.
+\end{equation*} 当然, 也可以直接利用换元, 令 $y:=\ln(x)$, 于是有 $\exp(y)=x$,
+于是
+\begin{align*}
+\frac{\mathrm{d}}{\mathrm{d}x}\exp(y)=&\frac{\mathrm{d}}{\mathrm{d}x}(x)\\
+\exp(y)\frac{\mathrm{d}y}{\mathrm{d}x}=&1\\
+\frac{\mathrm{d}y}{\mathrm{d}x}=&\frac{1}{\exp(y)}=\frac{1}{\exp(\ln(x))}=\frac{1}{x}.
+\end{align*}
+不难得出, 更通常而言, 有 \begin{equation*}
+\boxed{\frac{\mathrm{d}}{\mathrm{d}x}\log_au=\frac{1}{\ln(a)\cdot u}\frac{\mathrm{d}u}{\mathrm{d}x}}.
+\end{equation*}
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={反三角函数}]
+
+利用逆函数和导数的关系, 类似的, 不难推出,
+\begin{align*}
+\frac{\mathrm{d}}{\mathrm{d}x}\sin^{-1}(x)=&\frac{1}{\cos(\sin^{-1}(x))}\\
+=&\frac{1}{\sqrt{1-\sin^2(\sin^{-1}(x))}}\\
+=&\frac{1}{\sqrt{1-x^2}}.
+\end{align*}
+更通常的, \begin{equation*}
+\boxed{\sin^{-1}(u)=\frac{1}{\sqrt{1-u^2}}\frac{\mathrm{d}u}{\mathrm{d}x}}.
+\end{equation*} 和前面类似的, 也可以利用换元得到同样的结果, 考虑一个单位圆, 有
+$\theta=\sin^{-1}(y)$, 于是 $\sin(\theta)=y$, 对两边同时求导, 有
+$\cos(\theta)\frac{\mathrm{d}\theta}{\mathrm{d}y}=1$, 继而有
+\begin{align*}
+\frac{\mathrm{d}\theta}{\mathrm{d}y}=&\frac{1}{\cos(\theta)}\\
+&\text{(在单位圆里有 }\cos(\theta)= x\text{)}\\
+=&\frac{1}{x}\\
+=&\frac{1}{\sqrt{1-y^2}}.
+\end{align*}
+这样的方法其实有利用隐函数 $x^2+y^2=1$,
+之后我们还会看到隐函数的导数和微分方程有一些联系.
+
+另一个常用的反三角函数的导数
+$$\boxed{\begin{aligned}&\frac{\mathrm{d}}{\mathrm{d}x}\cos^{-1}(u)=-\frac{1}{\sqrt{1-u^2}}\frac{\mathrm{d}u}{\mathrm{d}x},\\
+&\frac{\mathrm{d}}{\mathrm{d}x}\tan^{-1}(u)=\frac{1}{1+u^2}\frac{\mathrm{d}u}{\mathrm{d}x},\\
+&\frac{\mathrm{d}}{\mathrm{d}x}\cot^{-1}(u)=-\frac{1}{1+u^2}\frac{\mathrm{d}u}{\mathrm{d}x},\\
+&\frac{\mathrm{d}}{\mathrm{d}x}\sec^{-1}(u)=\frac{1}{|u|\sqrt{u^2-1}}\frac{\mathrm{d}u}{\mathrm{d}x},\\
+&\frac{\mathrm{d}}{\mathrm{d}x}\mathrm{cosec}^{-1}(u)=-\frac{1}{|u|\sqrt{u^2-1}}\frac{\mathrm{d}u}{\mathrm{d}x}.\end{aligned}}$$
+
+推导过程可以留作练习.
+
+\end{tcolorbox}
