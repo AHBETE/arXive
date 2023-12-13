@@ -63,12 +63,12 @@ $u:=\ln{(a)}x$, 于是
 先考虑 $\sin$,
 \begin{align*}
 \frac{\mathrm{d}}{\mathrm{d}x}(\sin(x))=&\lim_{h\rightarrow0}\frac{\sin(x+h)-\sin(x)}{h}\\
-\text{ 参见\ref{010}\nameref{010}, }\sin(a\pm b)=\sin a\cos b\pm \cos a\sin b\\
+%\text{ 参见\ref{010}\nameref{010}, }\sin(a\pm b)=\sin a\cos b\pm \cos a\sin b\\
 =&\lim_{h\rightarrow0}\frac{\sin(x)\cos(h)+\cos(x)\sin(h)-\sin(x)}{h}\\
 =&\lim_{h\rightarrow0}\left(\frac{\sin(x)(\cos(h)-1)}{h}+\frac{\cos(x)\sin(h)}{h}\right),
 \end{align*}
 
-到这一步似乎就不很直观了, 若是直接取 $h=0$, 则有 $\cos(h)-1=0$ 和
+上面第一行到第二行用到了$\sin(a\pm b)=\sin a\cos b\pm \cos a\sin b$, 参见\ref{010}\nameref{010}. 到这一步之后似乎就不很直观了, 若是直接取 $h=0$, 则有 $\cos(h)-1=0$ 和
 $\sin(h)=0$, 两项的分子分母都同时为零了, 类似这种出现了
 $\frac{0}{0}$ 或者 $\frac{\infty}{\infty}$ 的情况称为不定式/未定型
 (indeterminate forms), 后面我们会看到将有一种更便 (简单) 捷 (粗暴)

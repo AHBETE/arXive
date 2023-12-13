@@ -1,6 +1,6 @@
 \section{积分技巧}\label{020}
 
-\subsection{换元 (substitution)}
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={换元 (substitution)}]
 
 事实上积分时的换元就是求导时的链式规则 (参见\ref{013}\nameref{013}) 反过来的过程.
 具体操作是这样的, 例如若代求 \(\int f(x)\mathrm{d}x\), 有时为了计算方便,
@@ -23,7 +23,9 @@
 于是积分转化为 \(\int u^2\mathrm{d}u\), 后面的步骤便非常容易了.
 \end{newquote}
 
-\subsection{分部积分法 (integration by parts)}
+\end{tcolorbox}
+
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={分部积分法 (integration by parts)}]
 
 分部积分法是由求导的乘法法则 (参见\ref{012}\nameref{012}) 而来, 求导的乘法法则有 \[
 (fg)'(x)=f'(x)g(x)+f(x)g'(x),
@@ -65,7 +67,7 @@
 所以便有\footnote{下面这个盒子是我高中的数学老师 Paul Elkin 传授的,
   他把它称作 ``working block'' (工作区),
   当然习惯了之后可以完全省略这个盒子里的内容, 但是初上手的时候,
-  这样一个盒子可以很好地把关键步骤和''计算草稿''分割开来,
+  这样一个盒子可以很好地把关键步骤和``计算草稿''分割开来,
   使得书写面板很整洁, 也方便检查.}: \[
 \boxed{\begin{aligned}
 &u=x,&&\mathrm{d}v=\cos x\ \mathrm{d}x;\\
@@ -87,17 +89,15 @@
 一些超纲: 事实上, 部分积分法的思想不止局限于对函数的积分, 在变分法
 (calculus of variation) 中, 在推导欧拉-拉格朗日方程 (Euler-Lagrange
 equation) 时, 对泛函 (functional)\footnote{函数从映射的角度,
-  是将数映射到数, 这里的''数''可能是实数, 也可能是虚数, 还可以是向量
+  是将数映射到数, 这里的``数''可能是实数, 也可能是虚数, 还可以是向量
   (什么是向量? 后面再细讲); 而泛函, 可以理解为函数的函数,
   泛函可以将函数映射到数, 它的定义域是函数构成的向量空间
   (什么是向量空间? 有机会再细说), 值域一般是实数.} 也可以有类似的操作
 (翻出了我本科的毕业论文中的一段) :
 
-\begin{figure}[!h]
-\centering
-\includegraphics[width=0.9\textwidth]{img/image-20231101180718605.png}
-%\caption{image-20231101180718605}
-\end{figure}
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw]
+  \includegraphics[width=0.9\textwidth]{img/image-20231101180718605.png}
+\end{tcolorbox}
 
 除此之外, 很多三角函数的积分可以利用三角函数的恒等式来化简;
 两个多项式相除的积分可以利用部分分式 (partial fraction) 化简,
@@ -105,3 +105,4 @@ equation) 时, 对泛函 (functional)\footnote{函数从映射的角度,
 作为一个现代人更可以合理使用一些计算软件辅助,
 没有必要过分地去追求精通很多积分; 而且实际上,
 很多积分并不能得到很好的解析式, 一般会用数值法来估算结果.
+\end{tcolorbox}

@@ -27,14 +27,18 @@ y(\theta)=\sin\theta
 \(\mathrm{d}\theta\) ``约掉了''.
 \end{newquote}
 
-\subsection{弧长}
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={弧长 (arc length)}]
 
-弧长 (arc length) 和圆的弧长其实关系并不大,
+弧长和圆的弧长其实关系并不大,
 这个词在这里被用来描述一个函数图像的一段曲线长度.
 初一看可能函数图像的一段曲线长度很难被描述, 但是要注意,
-我们现在已经有了微积分这一非常有力的工具, 我们可以从''极限'',
+我们现在已经有了微积分这一非常有力的工具, 我们可以从``极限'',
 ``微元''这些角度去思考. 这种思路在物理和工程上尤为重要,
 当我们试图找到变量之间的微分关系时.
+
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw]
+  \includegraphics[width=0.3\textwidth]{img/image-20231108152741069.png}
+\end{tcolorbox}
 
 回到弧长, 当我们试图找到一段函数曲线的长度时, 我们可以先 zoom in (放大),
 然后 focus on (观查) 其中非常小的一段, 当只关注其中非常小的一段时,
@@ -88,3 +92,4 @@ l=\int\mathrm{d}l=\int\sqrt{1+\left(\frac{\mathrm{d}y}{\mathrm{d}x}\right)^2}\ma
 然后弧长的微元便可以写作 \[
 \mathrm{d}l=\sqrt{\left(\frac{\mathrm{d}x}{\mathrm{d}t}\right)^2+\left(\frac{\mathrm{d}y}{\mathrm{d}t}\right)^2}\mathrm{d}t.
 \] 对其积分便可得到弧长.
+\end{tcolorbox}
