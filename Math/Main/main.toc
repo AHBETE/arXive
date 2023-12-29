@@ -25,3 +25,15 @@
 \contentsline {section}{\numberline {2.9}微积分基本定理-下}{59}{section.2.9}%
 \contentsline {section}{\numberline {2.10}积分技巧}{61}{section.2.10}%
 \contentsline {section}{\numberline {2.11}参数化曲线}{64}{section.2.11}%
+\contentsline {section}{\numberline {2.12}偏微分}{66}{section.2.12}%
+\contentsline {subsection}{\numberline {2.12.1}多变量函数}{66}{subsection.2.12.1}%
+\contentsline {subsection}{\numberline {2.12.2}高维的极限与连续性}{66}{subsection.2.12.2}%
+\contentsline {subsection}{\numberline {2.12.3}偏微分}{67}{subsection.2.12.3}%
+\contentsline {subsection}{\numberline {2.12.4}二次偏导}{67}{subsection.2.12.4}%
+\contentsline {subsection}{\numberline {2.12.5}链式法则和与全微分的联系}{68}{subsection.2.12.5}%
+\contentsline {chapter}{\numberline {3}向量分析 (vector analysis)}{69}{chapter.3}%
+\contentsline {section}{\numberline {3.1}向量的运算}{70}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}向量加法和数乘}{70}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}向量分量}{71}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}点乘 (dot product)}{73}{section.3.2}%
+\contentsline {subsubsection}{内积 (inner product, 选读)}{74}{section*.4}%

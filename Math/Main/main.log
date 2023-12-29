@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.23)  28 NOV 2023 10:28
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.23)  13 DEC 2023 18:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -983,7 +983,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]) [31]
 Chapter 2.
-(./ch/011.tex [32
+(./ch/011.tex
+File: img/image-20230503152041842.png Graphic file (type bmp)
+<img/image-20230503152041842.png>
+ [32
 
 ] [33]
 File: img/image-20230503152124313.png Graphic file (type bmp)
@@ -995,22 +998,16 @@ File: img/image-20230503152707849.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]) (./ch/012.tex
+ [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]) (./ch/012.tex
 File: img/image-20230614124234964.png Graphic file (type bmp)
 <img/image-20230614124234964.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36] [37]) (./ch/013.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39]
+ [36] [37] [38]) (./ch/013.tex [39]
 File: img/image-20230529100555673.png Graphic file (type bmp)
 <img/image-20230529100555673.png>
 
@@ -1097,29 +1094,63 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [63]
-Underfull \hbox (badness 1248) in paragraph at lines 65--71
+File: img/image-20231108153210418.png Graphic file (type bmp)
+<img/image-20231108153210418.png>
+
+Underfull \hbox (badness 1248) in paragraph at lines 69--75
 []\TU/KaiTi(0)/m/n/9.03374 比 如 对 于 质 量 分 布 不 均 匀 的 物 体\TU/lmr/m/n/9.03374 , \TU/KaiTi(0)/m/n/9.03374 给 定 密 度 关 于 位 置 的 函 数
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 65--71
+Underfull \hbox (badness 1205) in paragraph at lines 69--75
 \OML/cmm/m/it/9.03374 ^^Z\OT1/cmr/m/n/9.03374 (\OML/cmm/m/it/9.03374 x; y; z\OT1/cmr/m/n/9.03374 )$\TU/lmr/m/n/9.03374 , \TU/KaiTi(0)/m/n/9.03374 求 质 量\TU/lmr/m/n/9.03374 , \TU/KaiTi(0)/m/n/9.03374 利 用 $\OML/cmm/m/it/9.03374 m \OT1/cmr/m/n/9.03374 = \OML/cmm/m/it/9.03374 ^^ZV$ \TU/KaiTi(0)/m/n/9.03374 便 有\TU/lmr/m/n/9.03374 : $\OML/cmm/m/it/9.03374 m \OT1/cmr/m/n/9.03374 = [] []\OML/cmm/m/it/9.03374 m \OT1/cmr/m/n/9.03374 =
  []
 
-[64] [65])
+
+Underfull \vbox (badness 6675) has occurred while \output is active []
+
+ [64] [65]) (./ch/023.tex [66] [67]) [68]
+Chapter 3.
+(./ch/024.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69
+
+] [70]
+File: img/image-20231128153431774.png Graphic file (type bmp)
+<img/image-20231128153431774.png>
+File: img/image-20231128154149363.png Graphic file (type bmp)
+<img/image-20231128154149363.png>
+ [71]
+File: img/image-20231128170037975.png Graphic file (type bmp)
+<img/image-20231128170037975.png>
+ [72]) (./ch/025.tex [73] [74]
+Overfull \hbox (9.59851pt too wide) in paragraph at lines 108--111
+\TU/SimSun(0)/m/n/10.53937 这 个 例 子 里\TU/lmr/m/n/10.53937 , \TU/SimSun(0)/m/n/10.53937 积 分 前 还 需 要 加 一 个 归 一 化 系 数 $[]$\TU/lmr/m/n/10.53937 ), \TU/SimSun(0)/m/n/10.53937 那 么 基 底 $\OMS/cmsy/m/n/10.53937 f[]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 nx\OT1/cmr/m/n/10.53937 )\OML/cmm/m/it/10.53937 ; []\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 nx\OT1/cmr/m/n/10.53937 )\OMS/cmsy/m/n/10.53937 g$
+ []
+
+[75]
+Overfull \hbox (15.66728pt too wide) in paragraph at lines 129--139
+\TU/SimSun(0)/m/n/10.53937 积 记 作 $[] []$\TU/lmr/m/n/10.53937 , \TU/SimSun(0)/m/n/10.53937 若 有 \TU/SimSun(0)/b/n/10.53937 完 备 \TU/lmr/m/n/10.53937 (complete) \TU/SimSun(0)/m/n/10.53937 正 交 归 一 基 $\OMS/cmsy/m/n/10.53937 f[] \OML/cmm/m/it/10.53937 ; [] ; [] ; :::\OMS/cmsy/m/n/10.53937 g$\TU/lmr/m/n/10.53937 ,
+ []
+
+) [76]
 No file main.ind.
 (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 30761 strings out of 476683
- 688838 string characters out of 5807574
+ 30882 strings out of 476683
+ 692594 string characters out of 5807574
  1889012 words of memory out of 5000000
- 50382 multiletter control sequences out of 15000+600000
- 522236 words of font info for 121 fonts, out of 8000000 for 9000
+ 50476 multiletter control sequences out of 15000+600000
+ 525017 words of font info for 133 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  100i,14n,104p,489b,1805s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (71 pages).
+Output written on main.pdf (82 pages).
