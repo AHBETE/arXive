@@ -10,7 +10,7 @@ $\hat{\imath}$, $\hat{\jmath}$, 和 $\hat{k}$. 不难看出,
 它们\textbf{张成} (span) 了 $\mathbb{R}^3$ 中的全体向量的集合.
 
 \begin{newquote}
-当然这个基底的选择并不是唯一的.
+当然这个基底的选择并不是唯一的. 一个``好的", 合理的选择应该满足:
 
 首先是\textbf{基向量} (basis vector) 的数量,
 基向量的数量应该和维度是一致的, 否则自由度会不够; 就 $\mathbb{R}^3$
@@ -18,7 +18,7 @@ $\hat{\imath}$, $\hat{\jmath}$, 和 $\hat{k}$. 不难看出,
 combination), 即它们两个的倍数之和, 被限制在了一个平面里,
 而无法``覆盖''整个三维立体的空间.
 
-还有一个要求是, 基向量之间应该是\textbf{线性不相关} (linearly
+还有是, 基向量之间应该是\textbf{线性不相关} (linearly
 independent) 的,
 即其任意一个基向量不应该能被剩余的其他基向量的线性组合表示; 还是考虑
 $\mathbb{R}^3$ 中的情况, 两个基向量的线性组合已经``覆盖''了一个平面,
@@ -29,13 +29,15 @@ $\mathbb{R}^3$ 中的情况, 两个基向量的线性组合已经``覆盖''了�
 $\{\frac{\hat{\imath}+\hat{\jmath}}{\sqrt{2}},\frac{-\hat{\imath}+\hat{\jmath}}{\sqrt{2}},\hat{k}\}$,
 也就是原先的三个基向量, 以 $z-$轴为旋转轴,
 顺时针旋转45°得到的三个新的向量, 也可以是一组基底.
+
+当然, 基向量的数量也可以多于维数, 基向量间也可以是线性相关的, 这样就有一定的冗余度, 一个向量在这样的基底展开下可以有多种形式, 没有唯一的展开形式在很多场合下就不够``好".
 \end{newquote}
 
 在 $\{\hat{\imath},\hat{\jmath},\hat{k}\}$ 这个基底选择下, 我们定义``点乘'' ((dot product)) 这个向量乘法, 点乘规律可以总结为: 对于向量
 $\boldsymbol{a}=a_x\hat{\imath}+a_y\hat{\jmath}+a_z\hat{k}$ 和
 $\boldsymbol{b}=b_x\hat{\imath}+b_y\hat{\jmath}+b_z\hat{k}$,
 它们的点乘是 \[
-\boxed{\boldsymbol{a}\cdot\boldsymbol{b}=a_xb_x+a_yb_y+a_zd_z}.
+\boxed{\boldsymbol{a}\cdot\boldsymbol{b}=a_xb_x+a_yb_y+a_zb_z}.
 \] 这是因为我们规定, \[
 \begin{cases}
 \hat{\imath}\cdot\hat{\imath}=1\\
@@ -69,6 +71,8 @@ Kronecker Delta表述为 \[
 而归一则可以理解为向量的``长度''是 $1$ (again
 事实上我们还没有定义距离, but soon enough
 我们就可以有``距离''这个概念了).
+
+虽然正交归一是一个很好的性质, 但是基底的选择未必需要正交归一性; 当我们有一组比较任意的线性无关向量时, 若我们需要一组正交归一的基向量, 我们可以通过施密特正交化 (Schmidt orthogonalization) 来得到, 具体的过程这里就不做展开了.
 \end{newquote}
 
 \subsubsection{内积 (inner product, 选读)}
@@ -76,7 +80,7 @@ Kronecker Delta表述为 \[
 严格点来说, 点乘是一种内积, 或者也可以说, 内积是点乘的推广.
 
 在\ref{024}\nameref{024}中, 我们看到, 向量这个概念事实上比我们想象得要更宽泛一些,
-例如所有的连续函数 $C^\infty$ 可以视作一个线性空间,
+例如所有的光滑函数 $C^\infty$ 可以视作一个线性空间,
 不难发现函数加法和函数数乘这两个运算是满足封闭性的,
 同时余下的八条运算规律也是满足的.
 
