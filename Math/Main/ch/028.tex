@@ -1,5 +1,4 @@
-\section{梯度, 散度,
-和旋度}
+\section{梯度, 散度, 和旋度}\label{028}
 
 前面我们算是过了遍向量的最基本的概念以及运算,
 那么有没有关于向量的微积分呢?
@@ -11,13 +10,13 @@
 相当于把坐标的三个参数映射到一个标量 (暂时先只考虑实变函数):
 \(\mathbb{R}^3\rightarrow\mathbb{R}\).
 
-在【023】中, 我们发现, 多变量函数可以分别对各个变量求偏导,
+在【\ref{023}\nameref{023}】中, 我们发现, 多变量函数可以分别对各个变量求偏导,
 而偏微分和全微分的关系是\footnote{注意, 本篇中有大量忽略函数变量的标记,
   即类似 f=f(x), 请自行脑补全缺失的部分.} \[
 \mathrm{d}f=\frac{\partial f}{\partial x}\mathrm{d}x+\frac{\partial f}{\partial y}\mathrm{d}y+\frac{\partial f}{\partial z}\mathrm{d}z.
 \] 令 \(\{\hat{\imath},\hat{\jmath},\hat{k}\}\)
 分别为平行于三个坐标轴的单位向量, 利用它们的正交归一性,
-上式可以重新写作一个点乘的形式 (复习【025】): \[
+上式可以重新写作一个点乘的形式 (复习【\ref{025}\nameref{025}】): \[
 \mathrm{d}f=\left(\frac{\partial f}{\partial x}\hat{\imath}\right)\cdot\left(\mathrm{d}x\hat{\imath}\right)+\left(\frac{\partial f}{\partial y}\hat{\jmath}\right)\cdot\left(\mathrm{d}y\hat{\jmath}\right)+\left(\frac{\partial f}{\partial z}\hat{k}\right)\cdot\big(\mathrm{d}z\hat{k}\big).
 \] 令 \[
 \mathrm{d}\boldsymbol{r}:=\mathrm{d}x\hat{\imath}+\mathrm{d}y\hat{\jmath}+\mathrm{d}z\hat{k},
@@ -107,11 +106,9 @@
 进入这个曲面的磁感线和出这个曲面的磁感线数量应该是一致的,
 也就是说磁通量为零. 于是, 前面三个情况分别对应, 散度为正, 负, 和零.
 
-\begin{figure}
-\centering
-\includegraphics{image-20240125092014626.png}
-\caption{image-20240125092014626}
-\end{figure}
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw]
+  \includegraphics[width=0.9\textwidth]{img/image-20240125092014626.png}
+\end{tcolorbox}
 
 旋度是一个向量, 因为它的运算方式和叉乘类似, 它描述了每个点上的旋转.
 前面这句话有那么一点抽象, 稍微落实一点, 比如向量场描述的是水流,
@@ -129,11 +126,9 @@
 叉乘结果的指向是这两个向量所在公共平面的法向 (normal), again
 可以利用右手定则确定方向.
 
-\begin{figure}
-\centering
-\includegraphics{image-20240125121748817.png}
-\caption{image-20240125121748817}
-\end{figure}
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw]
+  \includegraphics[width=0.9\textwidth]{img/image-20240125121748817.png}
+\end{tcolorbox}
 
 然后通量计算的就是有多少向量``通过''了一个面积, 在物理里通量常用
 \(\Phi\) 表示, 考虑一个向量场 \(\boldsymbol{v}\) 和一块面积

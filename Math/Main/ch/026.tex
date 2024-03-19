@@ -1,5 +1,5 @@
 
-\section{点乘(续)}
+\section{点乘(续)}\label{026}
 
 前面比较介绍了在欧式空间里点乘的规律, 进一步地, 通过抽象化点乘这个概念,
 引出了内积. 现在我们来看看两个向量的点乘到底意味着什么, 有什么用.
@@ -21,7 +21,11 @@
 \(|\boldsymbol{a}|\equiv\sqrt{\boldsymbol{a}\cdot\boldsymbol{a}}=\sqrt{a_x^2+a_y^2+a_z^2}\).
 \end{newquote}
 
-上面的结论可以用余弦定律 (参见【005】) 来推导:
+上面的结论可以用余弦定律 (参见【\ref{005}\nameref{005}】) 来推导:
+
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw]
+  % \includegraphics[width=0.4\textwidth]{img/image-20231218163322717.png}
+\end{tcolorbox}
 
 \begin{newquote}
 证明: 利用余弦定律有 \[
@@ -33,7 +37,7 @@
 \(-\boldsymbol{a}\cdot\boldsymbol{b}-\boldsymbol{b}\cdot\boldsymbol{a}\),
 只因\footnote{只因你太美, baby.}点乘满足交换律,
 于是两个交叉项事实上没有区别
-(不难从【025】中发现点乘是满足交换律和结合律的). 于是 \[
+(不难从【\ref{025}\nameref{025}】中发现点乘是满足交换律和结合律的). 于是 \[
 |\boldsymbol{a}|^2+|\boldsymbol{b}|^2-2|\boldsymbol{a}||\boldsymbol{b}|\cos\theta=|\boldsymbol{a}|^2-|\boldsymbol{b}|^2-2\boldsymbol{a}\cdot\boldsymbol{b},
 \] 遂得到结论.
 \end{newquote}
@@ -42,6 +46,10 @@
 便可以求得一个向量在另一个向量方向上的``投影'' (projection)\footnote{``投影''其实说得很``物理'',
   考虑上文附图中, 光线沿着垂直于b的方向照在a上, 然后在b上 cast
   了一个阴影, 阴影的长度就叫a在b方向上的投影.}:
+
+  \begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw]
+    \includegraphics[width=0.4\textwidth]{img/image-20240104090927918.png}
+  \end{tcolorbox}
 
 如上图所示, \(\boldsymbol{a}\) 和 \(\boldsymbol{b}\) 的夹角 \(\theta\)
 的余弦利用点乘可得是
@@ -75,13 +83,17 @@ i.e.~\(\boldsymbol{a}\times\boldsymbol{b}=-\boldsymbol{b}\times\boldsymbol{a}\).
 \boldsymbol{a}\times\boldsymbol{b}=(a_yb_z-a_zb_y)\hat{\imath}+(a_zb_x-a_xb_z)\hat{\jmath}+(a_xb_y-a_yb_x)\hat{k}.
 \]
 
+\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw]
+  \includegraphics[width=0.4\textwidth]{img/image-20240104090600239.png}
+\end{tcolorbox}
+
 \begin{newquote}
 个人的记忆方法是, 左上向右下的对角线之和
 (凑不够三项相乘的对称到另一边补), 减去右上向左下的对角线之和.
 \end{newquote}
 
 叉乘本身不能推广到更高维, 但是叉乘事实上是楔积 (wedge product)
-\(\wedge\), 楔积便没有维度的限制了, 并且【021】中提到的体积元,
+\(\wedge\), 楔积便没有维度的限制了, 并且【\ref{021}\nameref{021}】中提到的体积元,
 更严格来讲应该是类似
 \(\mathrm{d}V=\mathrm{d}x\wedge\mathrm{d}y\wedge\mathrm{d}z\).
 
@@ -95,7 +107,7 @@ i.e.~\(\boldsymbol{a}\times\boldsymbol{b}=-\boldsymbol{b}\times\boldsymbol{a}\).
   contraction).}向内了;
 而外积则产生了原先两个向量共面之``外''的一个向量.
 
-【025】讨论内积的时候, 我们借用了狄拉克记号, 其中有
+【\ref{025}\nameref{025}】讨论内积的时候, 我们借用了狄拉克记号, 其中有
 \(\left|\ \right>\left<\ \right|\) 这样一个操作, 因为和内积
 \(\left<\ \right|\left.\right>\) 正好反过来, 于是很多时候被称为 outer
 product, 并没有对应的中文 (不是外积! 不是外积! 不是外积!),
