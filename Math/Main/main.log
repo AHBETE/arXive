@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.26)  28 FEB 2024 20:11
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.2.26)  27 MAR 2024 02:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -890,13 +890,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 117.
- [3]) (./ch/002.tex
-Underfull \vbox (badness 1552) has occurred while \output is active []
-
- [4] [5]
-Underfull \vbox (badness 6445) has occurred while \output is active []
-
- [6]) (./ch/003.tex
+ [3]) (./ch/002.tex [4] [5] [6]) (./ch/003.tex
 File: img/image-20230228095149998.png Graphic file (type bmp)
 <img/image-20230228095149998.png>
 File: img/image-20230228095405809.png Graphic file (type bmp)
@@ -983,48 +977,50 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]) [31]
 Chapter 2.
-(./ch/011.tex
+(./ch/011.tex [32
+
+]
 File: img/image-20230503152041842.png Graphic file (type bmp)
 <img/image-20230503152041842.png>
- [32
-
-] [33]
+ [33]
 File: img/image-20230503152124313.png Graphic file (type bmp)
 <img/image-20230503152124313.png>
+ [34]
 File: img/image-20230503152147199.png Graphic file (type bmp)
 <img/image-20230503152147199.png>
 File: img/image-20230503152707849.png Graphic file (type bmp)
 <img/image-20230503152707849.png>
-
+) (./ch/012.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]) (./ch/012.tex
+ [35]
 File: img/image-20230614124234964.png Graphic file (type bmp)
 <img/image-20230614124234964.png>
 
+Underfull \vbox (badness 2529) has occurred while \output is active []
+
+ [36] [37]) (./ch/013.tex
+
+Package tcolorbox Warning: Discard zero height first box part due to break problems (possible loss of zero height content) on input line 59.
+
+
+Underfull \vbox (badness 2020) has occurred while \output is active []
+
+ [38]
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before break' or set page breaks manually on input line 59.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36] [37] [38]) (./ch/013.tex [39]
+ [39]
 File: img/image-20230529100555673.png Graphic file (type bmp)
 <img/image-20230529100555673.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40] [41]) (./ch/014.tex
-
-Package tcolorbox Warning: Discard zero height first box part due to break problems (possible loss of zero height content) on input line 45.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43]) (./ch/015.tex
-Underfull \vbox (badness 1924) has occurred while \output is active []
+ [40] [41]) (./ch/014.tex [42] [43]) (./ch/015.tex
+Underfull \vbox (badness 1838) has occurred while \output is active []
 
  [44]
 File: img/image-20230614143547029.png Graphic file (type bmp)
@@ -1037,12 +1033,22 @@ File: img/image-20230615082313476.png Graphic file (type bmp)
 <img/image-20230615082313476.png>
 File: img/image-20230615082602908.png Graphic file (type bmp)
 <img/image-20230615082602908.png>
+ [46]
 File: img/image-20230615082658188.png Graphic file (type bmp)
 <img/image-20230615082658188.png>
 
+
+Package tcolorbox Warning: Discard zero height first box part due to break problems (possible loss of zero height content) on input line 179.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46] [47] [48]) (./ch/016.tex
+ [47]
+Overfull \hbox (7.64546pt too wide) in paragraph at lines 181--184
+[]\TU/SimSun(0)/m/n/10.53937 回 到 我 们 的 主 题\TU/lmr/m/n/10.53937 , \TU/SimSun(0)/m/n/10.53937 当 出 现 类 似 $\OML/cmm/m/it/10.53937 f\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 a\OT1/cmr/m/n/10.53937 ) = 0$\TU/lmr/m/n/10.53937 , $\OML/cmm/m/it/10.53937 g\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 a\OT1/cmr/m/n/10.53937 ) = 0$\TU/lmr/m/n/10.53937 , \TU/SimSun(0)/m/n/10.53937 且 希 望 求 得 极 限 $[][] []$
+ []
+
+[48]) (./ch/016.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--22
 \TU/KaiTi(0)/m/n/9.03374 高 斯 的 思 路 无 非 是\TU/lmr/m/n/9.03374 , \TU/KaiTi(0)/m/n/9.03374 将 这 个 求 和 拆 为 $\OMS/cmsy/m/n/9.03374 f\OT1/cmr/m/n/9.03374 1\OML/cmm/m/it/9.03374 ; \OT1/cmr/m/n/9.03374 100\OMS/cmsy/m/n/9.03374 g$\TU/lmr/m/n/9.03374 , $\OMS/cmsy/m/n/9.03374 f\OT1/cmr/m/n/9.03374 2\OML/cmm/m/it/9.03374 ; \OT1/cmr/m/n/9.03374 99\OMS/cmsy/m/n/9.03374 g$\TU/lmr/m/n/9.03374 , …,
  []
@@ -1056,7 +1062,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--127
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [50] [51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7064) has occurred while \output is active []
 
  [52]) (./ch/017.tex
 File: img/image-20230906163643414.png Graphic file (type bmp)
@@ -1087,9 +1093,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [60]) (./ch/020.tex [61]
 File: img/image-20231101180718605.png Graphic file (type bmp)
 <img/image-20231101180718605.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [62]) (./ch/021.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1107,7 +1110,7 @@ Underfull \hbox (badness 1205) in paragraph at lines 69--75
  []
 
 
-Underfull \vbox (badness 6675) has occurred while \output is active []
+Underfull \vbox (badness 4168) has occurred while \output is active []
 
  [64] [65]) (./ch/023.tex [66] [67]) [68]
 Chapter 3.
@@ -1144,76 +1147,67 @@ File: img/image-20240104090600239.png Graphic file (type bmp)
 Missing character: There is no ↔ (U+2194) in font [lmroman8-regular]:mapping=tex-text;!
 Missing character: There is no ️ (U+FE0F) in font SimSun/OT:script=hani;language=dflt;!
 [79] [80] [81] [82]
-File: img/image-20231218171032793.png Graphic file (type bmp)
-<img/image-20231218171032793.png>
+File: img/image-20240117100344273.png Graphic file (type bmp)
+<img/image-20240117100344273.png>
 
 Underfull \hbox (badness 5302) in paragraph at lines 174--179
 [][] \TU/KaiTi(0)/m/n/9.03374 图 片
  []
 
-[83]
-
-LaTeX Warning: Reference `026' on page 84 undefined on input line 203.
-
-
-LaTeX Warning: Reference `026' on page 84 undefined on input line 203.
-
-[84]
-File: img/image-20240117100344273.png Graphic file (type bmp)
-<img/image-20240117100344273.png>
+[83] [84]
+File: img/image-20231218171032793.png Graphic file (type bmp)
+<img/image-20231218171032793.png>
 
 Underfull \hbox (badness 6047) in paragraph at lines 233--236
 [][] \TU/SimSun(0)/m/n/10.53937 图 改
  []
 
-[85]
 File: img/image-20240117150843442.png Graphic file (type bmp)
 <img/image-20240117150843442.png>
-
 
 Package tcolorbox Warning: Discard zero height first box part due to break problems (possible loss of zero height content) on input line 244.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86] [87]
+ [85]) (./ch/028.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `026' on page 88 undefined on input line 259.
-
-
-LaTeX Warning: Reference `026' on page 88 undefined on input line 259.
-
-) (./ch/028.tex
+ [86]
 Overfull \hbox (14.89459pt too wide) in paragraph at lines 8--12
 []\TU/SimSun(0)/m/n/10.53937 考 虑 三 维 欧 氏 空 间 $\U/msb/m/n/10.53937 R[]$ \TU/SimSun(0)/m/n/10.53937 中 的 情 况\TU/lmr/m/n/10.53937 , \TU/SimSun(0)/m/n/10.53937 如 果 我 们 有 一 个 多 变 量 函 数\TU/lmr/m/n/10.53937 /\TU/SimSun(0)/m/n/10.53937 标 量 场 $\OML/cmm/m/it/10.53937 f\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 x; y; z\OT1/cmr/m/n/10.53937 )$\TU/lmr/m/n/10.53937 ,
  []
 
-[88] [89] [90]
+[87] [88]
 File: img/image-20240125092014626.png Graphic file (type bmp)
 <img/image-20240125092014626.png>
- [91]
+
+
+Package tcolorbox Warning: Discard zero height first box part due to break problems (possible loss of zero height content) on input line 111.
+
+
+Underfull \vbox (badness 1629) has occurred while \output is active []
+
+ [89]
 File: img/image-20240125121748817.png Graphic file (type bmp)
 <img/image-20240125121748817.png>
-) [92]
+) [90]
 No file main.ind.
 (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 31019 strings out of 476683
- 697584 string characters out of 5807575
+ 31057 strings out of 476683
+ 700266 string characters out of 5807575
  1889012 words of memory out of 5000000
- 50593 multiletter control sequences out of 15000+600000
+ 50631 multiletter control sequences out of 15000+600000
  526876 words of font info for 141 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 100i,14n,104p,489b,1805s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,14n,104p,489b,1813s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (98 pages).
+Output written on main.pdf (96 pages).

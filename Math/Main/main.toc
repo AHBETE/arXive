@@ -15,10 +15,13 @@
 \contentsline {section}{\numberline {1.10}三角函数的指数形式}{30}{section.1.10}%
 \contentsline {chapter}{\numberline {2}微积分 (calculus)}{32}{chapter.2}%
 \contentsline {section}{\numberline {2.1}极限和连续性}{32}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}极限 (limit)}{32}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}连续性 (continuity)}{34}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}导数}{36}{section.2.2}%
-\contentsline {section}{\numberline {2.3}常见函数的导数-上}{39}{section.2.3}%
+\contentsline {section}{\numberline {2.3}常见函数的导数-上}{38}{section.2.3}%
 \contentsline {section}{\numberline {2.4}常见函数的导数-下}{42}{section.2.4}%
 \contentsline {section}{\numberline {2.5}导数的应用}{44}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}洛必达法则 (L'Hôpital's rule)}{46}{subsection.2.5.1}%
 \contentsline {section}{\numberline {2.6}泰勒级数}{49}{section.2.6}%
 \contentsline {section}{\numberline {2.7}积分}{53}{section.2.7}%
 \contentsline {section}{\numberline {2.8}微积分基本定理-上}{56}{section.2.8}%
@@ -43,9 +46,9 @@
 \contentsline {subsubsection}{距离}{79}{section*.6}%
 \contentsline {subsubsection}{范数}{80}{section*.7}%
 \contentsline {subsubsection}{内积}{81}{section*.8}%
-\contentsline {subsubsection}{完备化}{84}{section*.9}%
-\contentsline {subsubsection}{附录: 行列式和递归}{86}{section*.10}%
-\contentsline {section}{\numberline {3.5}梯度, 散度, 和旋度}{88}{section.3.5}%
-\contentsline {subsubsection}{梯度}{89}{section*.11}%
-\contentsline {subsubsection}{散度和旋度}{90}{section*.12}%
-\contentsline {subsubsection}{附录: 通量}{92}{section*.13}%
+\contentsline {subsubsection}{完备化}{85}{section*.9}%
+\contentsline {subsubsection}{附录: 行列式和递归}{85}{section*.10}%
+\contentsline {section}{\numberline {3.5}梯度, 散度, 和旋度}{87}{section.3.5}%
+\contentsline {subsubsection}{梯度}{87}{section*.11}%
+\contentsline {subsubsection}{散度和旋度}{88}{section*.12}%
+\contentsline {subsubsection}{附录: 通量}{90}{section*.13}%

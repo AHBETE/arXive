@@ -11,7 +11,7 @@ Rudin\footnote{Baby = 数学分析原理 \emph{Principles of Mathematical
   Grandpa = 泛函分析 \emph{Functional Analysis}; 好好地学严格的数学,
   逃不掉这三本分析, 这个系列也就看个乐子.}).
 
-\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={极限 (limit)}]
+\subsection{极限 (limit)}
 
 \begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={定义}]
 当 $x$ 趋向于 $p$ 时, $x\rightarrow p$ , $f(x)$
@@ -45,7 +45,7 @@ $\delta>0$ 使得【若 $0<|x-p|<\delta$, 便有 $|f(x)-q|<\epsilon$
 \end{itemize}
 
 \begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw]
-  \includegraphics[width=0.9\textwidth]{img/image-20230503152041842.png}
+  \includegraphics[width=0.45\textwidth]{img/image-20230503152041842.png}
 \end{tcolorbox}
 
 \begin{newquote}
@@ -113,15 +113,14 @@ $\delta=\epsilon/a$;
 \end{itemize}
 
 \begin{newquote}
-回收一个坑. \ref{002}\nameref{002}中提到过 $\mathrm{0}^0$ 是未被定义的问题,
+回收一个坑. 【\ref{002}\nameref{002}】中提到过 $\mathrm{0}^0$ 是未被定义的问题,
 一种解释便是, 若希望用极限来定义它的取值, 那么应该从
 $\lim_{x\rightarrow0}x^0$ 出发, 得到 $1$, 还是应该从
 $\lim_{x\rightarrow0}0^x$ 出发, 得到 $0$?
 \end{newquote}
 
-\end{tcolorbox}
 
-\begin{tcolorbox}[size=fbox, breakable, enhanced jigsaw, title={连续性 (continuity)}]
+\subsection{连续性 (continuity)}
 
 \textbf{定义}: 对于一函数 $f(x)$, 对于任意的 $\epsilon>0$ , 存在
 $\delta>0$ 使得【对于某个特定的 $x_0$, 若有 $x$ 满足
@@ -170,8 +169,6 @@ $f(c)=C$.}
 \tcblower
 \kaishu{\small 若函数 $f(x)$ 在区间 $[a,b]$ 连续, 且$f(a)f(b)<0$, 则存在
 $c\in(a,b)$ 使得 $f(c)=0$.}
-\end{tcolorbox}
-
 \end{tcolorbox}
 
 \end{tcolorbox}
